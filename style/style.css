@@ -1,0 +1,138 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+div.con{
+	background-color: #F2F8FB;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.25fr 1fr 0.2fr;
+	grid-template-areas: ". h h ."
+						 "o tw th f"
+						 ". . . .";
+	grid-gap: 0 2%;
+	padding: 0 2%;
+}
+div.h{
+	grid-area: h;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Arial";
+}
+div.div-item.one{
+	grid-area: o;
+}
+div.div-item.two{
+	grid-area: tw;
+}
+div.div-item.three{
+	grid-area: th;
+}
+div.div-item.four{
+	grid-area: f;
+}
+div.div-item{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "img"
+						 "info";
+	border: 1px solid #EAF2F6;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+div.div-img{
+	grid-area: img;
+}
+div.info{
+	grid-area: info;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	background-color: white;
+	padding: 0 7%;
+}
+div.div-name{
+	display: grid;
+	grid-template-rows: 0.7fr 0.2fr;
+	grid-template-areas: "name"
+						 "count";
+	border-bottom: 1px solid #EAF2F6;
+	text-align: left;
+	align-items: center;
+}
+div.name{
+	grid-area: name;
+	font-size: 140%;
+	font-family: "Arial";
+}
+div.count{
+	grid-area: count;
+	color: gray;
+}
+div.div-count{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "num_one num_two num_three";
+}
+div.room{
+	grid-area: num_one;
+	display: grid;
+	grid-template-rows: 0.3fr 0.3fr;
+	grid-template-areas: "cr"
+						 "nr";
+	color: #333333;
+	padding-top: 20%;
+}
+div.count-room{
+	grid-area: cr;
+	font-family: "Arial";
+	font-size: 150%;
+	text-align: center;
+}
+div.name-room{
+	grid-area: nr;
+	font-family: "Arial";
+	font-size: 100%;
+	text-align: center;
+}
+div.broom{
+	grid-area: num_two;
+	display: grid;
+	grid-template-rows: 0.3fr 0.3fr;
+	grid-template-areas: "cb"
+						 "nb";
+	color: #333333;
+	padding-top: 20%;
+}
+div.count-broom{
+	grid-area: cb;
+	font-family: "Arial";
+	font-size: 150%;
+	text-align: center;
+}
+div.name-broom{
+	grid-area: nb;
+	font-family: "Arial";
+	font-size: 100%;
+	text-align: center;
+}
+div.area{
+	grid-area: num_three;
+	display: grid;
+	grid-template-rows: 0.3fr 0.3fr;
+	grid-template-areas: "ca"
+						 "na";
+	color: #333333;
+	padding-top: 20%;
+}
+div.count-area{
+	grid-area: ca;
+	font-family: "Arial";
+	font-size: 150%;
+	text-align: center;
+}
+div.name-area{
+	grid-area: na;
+	font-family: "Arial";
+	font-size: 100%;
+	text-align: center;
+}
